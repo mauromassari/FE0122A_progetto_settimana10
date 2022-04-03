@@ -46,7 +46,7 @@
 
 
               <div class="col-12">
-                <button type="submit" [disabled]="form.invalid || !productsInCarrello" class="btn btn-primary mt-4">
+                <button type="submit" [disabled]="form.invalid || !productsInCarrello.length" class="btn btn-primary mt-4">
                   Submit
                 </button>
               </div>
