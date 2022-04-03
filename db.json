@@ -1,0 +1,26 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Samsung Galaxy S22",
+      "price": 1400,
+      "description": "L'ultimo Samsung Galaxy",
+      "imgUrl": "https://asset.mediaw.it/wcsstore/MMCatalogAssetStore/asset/images/16/81/168122.jpg"
+    },
+    {
+      "id": 2,
+      "name": "OnePlus 10",
+      "price": 1200,
+      "description": "Il Flagship di OnePlus",
+      "imgUrl": "https://asset.mediaw.it/wcsstore/MMCatalogAssetStore/asset/images/13/31/133117.jpg"
+    },
+    {
+      "id": 3,
+      "name": "IPhone 14",
+      "price": 1500,
+      "description": "Il modello di punta di Apple Iphone",
+      "imgUrl": "https://asset.mediaw.it/wcsstore/MMCatalogAssetStore/asset/images/16/22/162204.jpg"
+
+    }
+  ]
+}

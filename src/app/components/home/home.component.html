@@ -1,0 +1,51 @@
+<!--<div class="container mt-5">
+
+  <div class="row" *ngIf="prodottiDaStamp;else loading">
+    <div class="col-6 mb-3" *ngFor="let prod of prodottiDaStamp; let i = index">
+
+      <div class="card h-100">
+
+        <div class="card-body">
+          <h5 class="card-title">{{prod.name}}</h5>
+          <p class="card-text">{{prod.description}}</p>
+          <h6 class="card-subtitle mb-2 text-muted">€ {{prod.price}}</h6> -->
+
+
+          <!--<a class="btn btn-danger" (click)="cancella(foto.id, i)">Elimina</a>
+          <a class="btn btn-success" (click)="aggiuntaFavoriti()">Mi piace</a> -->
+<!--
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #loading>
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</ng-template> -->
+
+<div class="container mt-5">
+  <div *ngFor="let prod of prodottiDaStamp; let i = index">
+    <app-product-card *ngIf="prod.id; else loading" [product]="prod" >
+      <button  class="btn btn-primary" aria-current="page"
+      [routerLink]="[prod.id]"
+      routerLinkActive="Active" >
+        Dettagli prodotto
+      </button>
+    </app-product-card>
+  </div>
+</div>
+
+<ng-template #loading>
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</ng-template>
+
+
+
+
+
